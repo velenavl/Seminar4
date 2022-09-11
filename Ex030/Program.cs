@@ -26,10 +26,11 @@
 
 int[] FillArray(int n)
 {
+    Random random=new Random();
     int[] newArray = new int [n];
     for (int i=0;i<n; i++)
     {
-    newArray[i]=new Random().Next(0, 2);    
+    newArray[i]=random.Next(0, 2);    
     }
     return newArray;
 }
